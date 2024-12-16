@@ -1,0 +1,9 @@
+The number of positive samples is: 300
+The number of negative samples is: 300
+
+U-statistic: 38930.5
+P-value: 0.0033929497704941404
+
+拒绝原假设，两个集合间有显著差异
+1.952366004250727
+2.69593937045315

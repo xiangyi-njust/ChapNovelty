@@ -1,0 +1,125 @@
+Directory
+
+       data:  将CalNovelty中的计算结果重新组织后保存在该文件夹下。有三个文件夹
+
+              compare_sec:  直接将特定计算方法下考虑篇章前后的结果汇总到同一张表中，便于后续对方法优劣的比较  （最原始数据）
+
+              compare_specific_sec: 保存了论文中各个章节的新颖性计算结果，便于后续分析特定章节新颖性与整体新颖性之间的关系
+
+              overview: 将每种方法的计算结果单独放一个表中，便于对计算结果进行描述性统计分析
+
+                     该文件夹目前只有reference方法的结果，因为Mesh Terms当前不太可靠
+
+                     该文件夹中的结果是对异常值进行过滤后的结果，也是论文中进行描述性统计时所使用的数据
+       
+       EDA.ipynb:  data文件夹中的内容大多由该部分代码生成，有三块主要工作
+
+              描述性统计：
+
+                     针对CalNovelty不同方法的计算结果，首先将所有年份的数据汇总到一个表格中，包括论文doi, novelty, year，对应数据
+                     存储在overview文件夹下
+
+                     此外，该部分代码需要对数据进行描述性统计，即根据overview中的结果绘制相应图形，包括特定方法下新颖性数值的总体
+                     分布图、随时间的分布图、各个学科的分布图
+
+              将基于篇章的和基于论文的结果合并
+
+                     这是之前的代码，对应于compare_sec文件夹中的内容，将同一方法下考虑篇章前后的结果汇总到一张表格中
+
+              验证指标之间的相关性
+
+                     比较了同一方法下考虑篇章前后指标得分的相关性，以及论文指标得分和各个章节的指标得分之间的关系
+                     （这不应该放在当前内容中）
+
+       gold_standard: 金标准数据集
+
+              F1000: F1000 Research数据集，由三部分内容组成
+
+                     PLos 100: F1000改版后只能下载前100条，这是我10月份从F1000上下载的与PLOS相关的最新的100条数据
+
+                     PLos Biology: 这是改版前，当时想基于生物医学领域分析，下载下来的F1000中属于PLOS Biology的数据
+
+                     PLos Other: 赵yi毕业论文所用数据，包含了PLos较多学科的内容
+
+                     Plos_recom_tags.xlsx: 将上述文件夹中数据合并后的结果，包括论文Doi, 标签分布情况，以及出版年份
+
+              log:   存储下来了一些方法验证过程中的结果信息
+
+                     novel_vs_nonnovel: 分析指标对于判断论文是否属于新颖组别的显著程度
+
+                     score_differ:  分析考虑篇章前后指标得分间的相关性程度
+
+              regression: 存储了用于回归分析的数据，包括论文Doi, 新颖性分值， 是否新颖，以及年份
+
+       validate.ipynb: 主要是在验证所提出的指标的性能
+
+              F1000数据合并： 将F1000文件夹中各个来源的数据进行合并、过滤，形成最终的新标准数据集
+
+              检验指标是否显著： 通过分析指标在新颖和非新颖论文组别的得分差异是否显著，来说明指标的效果。这部分代码较多，
+                               主要包括了之前使用compare_sec里数据得到的验证结果，以及后续使用overview中单一文件计算得到的结果
+
+                     with section: 使用overview中数据，分析考虑篇章的指标的性能
+
+                     no section: 使用overview中数据，分析不考虑篇章时的指标性能
+
+                     uzzi， wang, etc: 使用compare_sec中数据
+
+              看新颖论文是否在指标的高新颖性得分区间占比更高
+
+              得分之间的差异性
+
+                     当前用的overview中数据，分析了考虑篇章前后指标得分的差异
+
+              回归分析
+
+                     构建回归分析的数据集
+
+       Robustness.ipynb: 主要对研究结果进行鲁棒性检验
+
+              （1）异常值对评估结果带来的影响
+
+              （2）考虑更多的控制变量后结果的变化
+
+              （3）Wang的方法换成N=4时结果有无变化
+
+
+Analyse
+├─ EDA.ipynb
+├─ data
+│    ├─ compare_sec
+│    │    ├─ mesh_cal_new.csv
+│    │    ├─ mesh_observe_vs_expect.csv
+│    │    ├─ mesh_semantic.csv
+│    │    ├─ uzzi_novelty.csv
+│    │    └─ wang_novelty.csv
+│    ├─ compare_specific_sec
+│    │    └─ uzzi_novelty_sec.json
+│    └─ overview
+│           ├─ uzzi_filtered.csv
+│           ├─ uzzi_sec_merge_comb.csv
+│           ├─ uzzi_sec_merge_comb_filtered.csv
+│           ├─ uzzi_sec_merge_sec.csv
+│           ├─ uzzi_sec_merge_sec_filtered.csv
+│           ├─ wang_filtered.csv
+│           ├─ wang_sec.csv
+│           └─ wang_sec_filtered.csv
+├─ desc.txt
+└─ gold_standard
+       ├─ F1000
+       │    ├─ PLos 100
+       │    ├─ PLos Biology
+       │    ├─ PLos Other
+       │    └─ Plos_recom_tags.xlsx
+       ├─ log
+       │    ├─ novel_vs_nonnovel
+       │    └─ score_differ
+       ├─ regression
+       │    ├─ mesh_cal_new.xlsx
+       │    ├─ mesh_observe_vs_expect.xlsx
+       │    ├─ mesh_semantic.xlsx
+       │    ├─ uzzi.dta
+       │    ├─ uzzi.xlsx
+       │    ├─ uzzi_sec.xlsx
+       │    ├─ wang.xlsx
+       │    └─ wang_sec.xlsx
+       └─ validate.ipynb

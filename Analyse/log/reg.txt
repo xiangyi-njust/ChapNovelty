@@ -1,0 +1,374 @@
+uzzi_sec_merge_comb_filtered_balanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood =  -467.1812  
+        Iteration 1:   log likelihood = -459.62014  
+        Iteration 2:   log likelihood = -459.61672  
+        Iteration 3:   log likelihood = -459.61672  
+
+        Logistic regression                                     Number of obs =    674
+                                                                LR chi2(1)    =  15.13
+                                                                Prob > chi2   = 0.0001
+        Log likelihood = -459.61672                             Pseudo R2     = 0.0162
+
+        ------------------------------------------------------------------------------
+            label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |  -.1931379   .0504516    -3.83   0.000    -.2920212   -.0942546
+            _cons |  -.6190756   .1788332    -3.46   0.001    -.9695823    -.268569
+        ------------------------------------------------------------------------------
+
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =    674
+                                                                LR chi2(1)    =  15.13
+                                                                Prob > chi2   = 0.0001
+        Log likelihood = -459.61672                             Pseudo R2     = 0.0162
+
+        ------------------------------------------------------------------------------
+            label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |   .8243683   .0415907    -3.83   0.000     .7467527     .910051
+            _cons |   .5384419   .0962913    -3.46   0.001     .3792414    .7644727
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+uzzi_sec_merge_comb_filtered_unbalanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -1138.0352  
+        Iteration 1:   log likelihood = -1128.7546  
+        Iteration 2:   log likelihood = -1128.6322  
+        Iteration 3:   log likelihood = -1128.6322  
+
+        Logistic regression                                     Number of obs =  3,800
+                                                                LR chi2(1)    =  18.81
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1128.6322                             Pseudo R2     = 0.0083
+
+        ------------------------------------------------------------------------------
+            label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |  -.1757877   .0416136    -4.22   0.000    -.2573488   -.0942266
+            _cons |   1.775767   .1375653    12.91   0.000     1.506144     2.04539
+        ------------------------------------------------------------------------------
+
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =  3,800
+                                                                LR chi2(1)    =  18.81
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1128.6322                             Pseudo R2     = 0.0083
+
+        ------------------------------------------------------------------------------
+            label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |   .8387961   .0349053    -4.22   0.000     .7730985    .9100765
+            _cons |   5.904808   .8122968    12.91   0.000     4.509309    7.732174
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+uzzi_sec_merge_sec_filtered_balanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -450.54567  
+        Iteration 1:   log likelihood = -441.25584  
+        Iteration 2:   log likelihood = -441.24829  
+        Iteration 3:   log likelihood = -441.24829  
+
+        Logistic regression                                     Number of obs =    650
+                                                                LR chi2(1)    =  18.59
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -441.24829                             Pseudo R2     = 0.0206
+
+        ------------------------------------------------------------------------------
+               label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |  -.2439455   .0578082    -4.22   0.000    -.3572475   -.1306436
+               _cons |  -.7103832   .1854973    -3.83   0.000    -1.073951   -.3468151
+        ------------------------------------------------------------------------------
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =    650
+                                                                LR chi2(1)    =  18.59
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -441.24829                             Pseudo R2     = 0.0206
+
+        ------------------------------------------------------------------------------
+               label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |   .7835303   .0452945    -4.22   0.000     .6995993    .8775305
+               _cons |   .4914558   .0911637    -3.83   0.000     .3416559     .706936
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+uzzi_sec_merge_sec_filtered_unbalanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -1101.4174  
+        Iteration 1:   log likelihood =  -1092.209  
+        Iteration 2:   log likelihood = -1092.0998  
+        Iteration 3:   log likelihood = -1092.0998  
+
+        Logistic regression                                     Number of obs =  3,707
+                                                                LR chi2(1)    =  18.64
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1092.0998                             Pseudo R2     = 0.0085
+
+        ------------------------------------------------------------------------------
+               label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |  -.1816884   .0428844    -4.24   0.000    -.2657402   -.0976366
+               _cons |   1.823872   .1300013    14.03   0.000     1.569075     2.07867
+        ------------------------------------------------------------------------------
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =  3,707
+                                                                LR chi2(1)    =  18.64
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1092.0998                             Pseudo R2     = 0.0085
+
+        ------------------------------------------------------------------------------
+               label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |   .8338611   .0357596    -4.24   0.000     .7666383    .9069784
+               _cons |   6.195804   .8054624    14.03   0.000     4.802202    7.993831
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+wang_sec_filtered_balanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -415.88831  
+        Iteration 1:   log likelihood = -411.93088  
+        Iteration 2:   log likelihood = -411.92843  
+        Iteration 3:   log likelihood = -411.92843  
+
+        Logistic regression                                     Number of obs =    600
+                                                                LR chi2(1)    =   7.92
+                                                                Prob > chi2   = 0.0049
+        Log likelihood = -411.92843                             Pseudo R2     = 0.0095
+
+        ------------------------------------------------------------------------------
+            label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |  -.0718864   .0260141    -2.76   0.006    -.1228731   -.0208997
+            _cons |   .1652606   .1009029     1.64   0.101    -.0325055    .3630267
+        ------------------------------------------------------------------------------
+
+    
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =    600
+                                                                LR chi2(1)    =   7.92
+                                                                Prob > chi2   = 0.0049
+        Log likelihood = -411.92843                             Pseudo R2     = 0.0095
+
+        ------------------------------------------------------------------------------
+            label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |   .9306366   .0242097    -2.76   0.006     .8843759    .9793172
+            _cons |     1.1797   .1190352     1.64   0.101     .9680171    1.437674
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+wang_sec_filtered_unbalanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -1029.8122  
+        Iteration 1:   log likelihood = -1020.8396  
+        Iteration 2:   log likelihood = -1020.1736  
+        Iteration 3:   log likelihood =  -1020.172  
+        Iteration 4:   log likelihood =  -1020.172  
+
+        Logistic regression                                     Number of obs =  3,568
+                                                                LR chi2(1)    =  19.28
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1020.172                              Pseudo R2     = 0.0094
+
+        ------------------------------------------------------------------------------
+            label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |   -.075684   .0163611    -4.63   0.000    -.1077513   -.0436168
+            _cons |   2.556493    .073796    34.64   0.000     2.411855    2.701131
+
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =  3,568
+                                                                LR chi2(1)    =  19.28
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1020.172                              Pseudo R2     = 0.0094
+
+        ------------------------------------------------------------------------------
+            label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+          Novelty |   .9271091   .0151686    -4.63   0.000     .8978509    .9573207
+            _cons |   12.89053   .9512701    34.64   0.000     11.15464    14.89656
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+uzzi_filtered_balanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -469.95379  
+        Iteration 1:   log likelihood = -462.63257  
+        Iteration 2:   log likelihood =  -462.6297  
+        Iteration 3:   log likelihood =  -462.6297  
+
+        Logistic regression                                     Number of obs =    678
+                                                                LR chi2(1)    =  14.65
+                                                                Prob > chi2   = 0.0001
+        Log likelihood = -462.6297                              Pseudo R2     = 0.0156
+
+        ------------------------------------------------------------------------------
+               label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |  -.1112049   .0294975    -3.77   0.000     -.169019   -.0533907
+               _cons |  -.1880462   .0921739    -2.04   0.041    -.3687037   -.0073886
+        ------------------------------------------------------------------------------
+
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =    678
+                                                                LR chi2(1)    =  14.65
+                                                                Prob > chi2   = 0.0001
+        Log likelihood = -462.6297                              Pseudo R2     = 0.0156
+
+        ------------------------------------------------------------------------------
+               label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |   .8947554   .0263931    -3.77   0.000     .8444929    .9480095
+               _cons |   .8285765   .0763732    -2.04   0.041     .6916303    .9926387
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+uzzi_filtered_unbalanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood =  -1153.539  
+        Iteration 1:   log likelihood = -1136.4277  
+        Iteration 2:   log likelihood = -1136.1003  
+        Iteration 3:   log likelihood = -1136.1002  
+        Iteration 4:   log likelihood = -1136.1002  
+
+        Logistic regression                                     Number of obs =  3,918
+                                                                LR chi2(1)    =  34.88
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1136.1002                             Pseudo R2     = 0.0151
+
+        ------------------------------------------------------------------------------
+               label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |  -.1285546   .0219934    -5.85   0.000    -.1716609   -.0854482
+               _cons |   2.132928   .0646866    32.97   0.000     2.006144    2.259711
+        ------------------------------------------------------------------------------
+
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =  3,918
+                                                                LR chi2(1)    =  34.88
+                                                                Prob > chi2   = 0.0000
+        Log likelihood = -1136.1002                             Pseudo R2     = 0.0151
+
+        ------------------------------------------------------------------------------
+               label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |   .8793656   .0193403    -5.85   0.000     .8422647    .9181007
+               _cons |   8.439538   .5459247    32.97   0.000     7.434596    9.580319
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+wang_filtered_balanced
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -449.15937  
+        Iteration 1:   log likelihood = -448.28488  
+        Iteration 2:   log likelihood = -448.28487  
+
+        Logistic regression                                     Number of obs =    648
+                                                                LR chi2(1)    =   1.75
+                                                                Prob > chi2   = 0.1860
+        Log likelihood = -448.28487                             Pseudo R2     = 0.0019
+
+        ------------------------------------------------------------------------------
+               label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |  -.0112252   .0085096    -1.32   0.187    -.0279038    .0054534
+               _cons |   .1007249   .1095112     0.92   0.358    -.1139131     .315363
+        ------------------------------------------------------------------------------
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =    648
+                                                                LR chi2(1)    =   1.75
+                                                                Prob > chi2   = 0.1860
+        Log likelihood = -448.28487                             Pseudo R2     = 0.0019
+
+        ------------------------------------------------------------------------------
+               label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |   .9888376   .0084147    -1.32   0.187      .972482    1.005468
+               _cons |   1.105972   .1211164     0.92   0.358     .8923355    1.370757
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.
+
+
+wang_filtered_unbalanced
+
+
+    . logit label Novelty
+
+        Iteration 0:   log likelihood = -1096.7787  
+        Iteration 1:   log likelihood = -1096.7751  
+        Iteration 2:   log likelihood = -1096.7751  
+
+        Logistic regression                                     Number of obs =  3,682
+                                                                LR chi2(1)    =   0.01
+                                                                Prob > chi2   = 0.9319
+        Log likelihood = -1096.7751                             Pseudo R2     = 0.0000
+
+        ------------------------------------------------------------------------------
+               label | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |  -.0005437   .0063599    -0.09   0.932    -.0130089    .0119215
+               _cons |   2.343492   .0836966    28.00   0.000     2.179449    2.507534
+        ------------------------------------------------------------------------------
+
+    . logistic label Novelty
+
+        Logistic regression                                     Number of obs =  3,682
+                                                                LR chi2(1)    =   0.01
+                                                                Prob > chi2   = 0.9319
+        Log likelihood = -1096.7751                             Pseudo R2     = 0.0000
+
+        ------------------------------------------------------------------------------
+               label | Odds ratio   Std. err.      z    P>|z|     [95% conf. interval]
+        -------------+----------------------------------------------------------------
+             Novelty |   .9994564   .0063565    -0.09   0.932     .9870753    1.011993
+               _cons |   10.41755   .8719137    28.00   0.000     8.841435    12.27462
+        ------------------------------------------------------------------------------
+        Note: _cons estimates baseline odds.

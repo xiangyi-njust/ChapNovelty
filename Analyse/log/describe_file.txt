@@ -1,0 +1,87 @@
+uzzi_filtered.csv
+count    287040.000000
+mean         -1.540352
+std           2.530037
+min          -8.342981
+25%          -3.076780
+50%          -1.401879
+75%           0.019804
+max           5.316187
+Name: Novelty, dtype: float64
+
+uzzi_sec_merge_comb.csv
+count    297122.000000
+mean         -2.716548
+std          11.347089
+min         -44.461453
+25%          -3.956932
+50%          -2.599975
+75%          -1.723164
+max        1167.291089
+Name: Novelty, dtype: float64
+
+uzzi_sec_merge_comb_filtered.csv
+count    279995.000000
+mean         -2.811141
+std           1.523475
+min          -7.307568
+25%          -3.695713
+50%          -2.519837
+75%          -1.692137
+max           1.620785
+Name: Novelty, dtype: float64
+
+uzzi_sec_merge_sec.csv
+count    297122.000000
+mean         -0.965240
+std          17.137472
+min         -42.190137
+25%          -3.550577
+50%          -2.304580
+75%          -1.439285
+max        1339.975197
+Name: Novelty, dtype: float64
+
+uzzi_sec_merge_sec_filtered.csv
+count    270791.000000
+mean         -2.537261
+std           1.444342
+min          -6.717415
+25%          -3.377802
+50%          -2.290640
+75%          -1.503828
+max           1.727564
+Name: Novelty, dtype: float64
+
+wang_filtered.csv
+count    254857.000000
+mean          8.901251
+std           8.864262
+min           0.000000
+25%           1.908863
+50%           5.999970
+75%          13.343305
+max          37.476340
+Name: Novelty, dtype: float64
+
+wang_sec.csv
+count    260064.000000
+mean          6.113621
+std          14.217413
+min           0.000000
+25%           0.000000
+50%           1.401165
+75%           5.862276
+max        1124.244048
+Name: Novelty, dtype: float64
+
+wang_sec_filtered.csv
+count    230855.000000
+mean          2.485329
+std           3.409549
+min           0.000000
+25%           0.000000
+50%           0.901692
+75%           3.662738
+max          14.654673
+Name: Novelty, dtype: float64

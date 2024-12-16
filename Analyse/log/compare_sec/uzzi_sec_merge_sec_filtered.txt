@@ -1,0 +1,64 @@
+introduction
+
+    pearsonr_coef: 0.7768429911413663
+    pearsonr_p_value: 0.0
+
+    spearmanr
+    spearmanr_coef: 0.8229640607393868
+    spearmanr_p_value: 0.0
+
+    kendalltau
+    kendalltau_coef: 0.6605992208682311
+    kendalltau_p_value: 0.0
+
+results
+
+    pearsonr_coef: 0.7345356563842526
+    pearsonr_p_value: 0.0
+
+    spearmanr
+    spearmanr_coef: 0.7999530213767951
+    spearmanr_p_value: 0.0
+
+    kendalltau
+    kendalltau_coef: 0.6667640009293822
+    kendalltau_p_value: 0.0
+
+discussion
+
+    pearsonr_coef: 0.773622998188344
+    pearsonr_p_value: 0.0
+
+    spearmanr
+    spearmanr_coef: 0.8217718863955291
+    spearmanr_p_value: 0.0
+
+    kendalltau
+    kendalltau_coef: 0.6588416161673292
+    kendalltau_p_value: 0.0
+
+method
+
+    pearsonr_coef: 0.6696679478074049
+    pearsonr_p_value: 0.0
+
+    spearmanr
+    spearmanr_coef: 0.7152644996757211
+    spearmanr_p_value: 0.0
+
+    kendalltau
+    kendalltau_coef: 0.5610374164548321
+    kendalltau_p_value: 0.0
+
+conclusion
+
+    pearsonr_coef: 0.876258132021067
+    pearsonr_p_value: 0.0
+
+    spearmanr
+    spearmanr_coef: 0.9393730174878012
+    spearmanr_p_value: 0.0
+    
+    kendalltau
+    kendalltau_coef: 0.9086108538248272
+    kendalltau_p_value: 0.0
