@@ -1,9 +1,0 @@
-The number of positive samples is: 325
-The number of negative samples is: 325
-
-U-statistic: 41865.5
-P-value: 4.81010719632899e-06
-
-拒绝原假设，两个集合间有显著差异
--3.1570492715076237
--2.6810534561496704
