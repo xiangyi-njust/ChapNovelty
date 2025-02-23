@@ -41,3 +41,8 @@ Therefore, this study incorporates the textual structure information of papers i
 The results show that when using the Uzzi method, incorporating the textual structure of papers can accurately distinguish between expert-identified novel and non-novel papers, and the explanatory power of the measurement indicators is stronger compared to when this information is not considered. However, the Wang method fails to accurately identify novel papers both before and after incorporating textual structure information.
 
 We also compared the relationship between the novelty of different sections and the overall novelty of a paper and conducted an in-depth analysis of the evaluation results from the two novelty measurement methods. This provides a basis for selecting appropriate measurement methods according to specific research scenarios in future studies.
+
+## Citation
+Please cite the following paper if you use these codes and datasets in your work.
+
+> Yi Xiang, Yi Zhao, Chengzhi Zhang\*. Quantifying Novelty of Scientific Research Publications: An Approach Integrating Discourse Structure. ***Journal of the Association for Information Science and Technology***, 2025.（submitted)  [[Dataset & Source Code]](https://github.com/xiangyi-njust/ChapNovelty)
